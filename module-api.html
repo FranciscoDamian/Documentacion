@@ -1,0 +1,3758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>api - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AreaController.html">AreaController</a><ul class='methods'><li data-type='method'><a href="AreaController.html#.getAll">getAll</a></li></ul></li><li><a href="AvalesController.html">AvalesController</a><ul class='methods'><li data-type='method'><a href="AvalesController.html#.createOne">createOne</a></li><li data-type='method'><a href="AvalesController.html#.deleteOne">deleteOne</a></li><li data-type='method'><a href="AvalesController.html#.getOne">getOne</a></li><li data-type='method'><a href="AvalesController.html#.updateOne">updateOne</a></li></ul></li><li><a href="BeneficiarioController.html">BeneficiarioController</a><ul class='methods'><li data-type='method'><a href="BeneficiarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.getOne">getOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.updateOne">updateOne</a></li></ul></li><li><a href="ClientesController.html">ClientesController</a><ul class='methods'><li data-type='method'><a href="ClientesController.html#.createClient">createClient</a></li><li data-type='method'><a href="ClientesController.html#.getClient">getClient</a></li><li data-type='method'><a href="ClientesController.html#.getData">getData</a></li><li data-type='method'><a href="ClientesController.html#.updateClient">updateClient</a></li></ul></li><li><a href="ConsultarCuentaController.html">ConsultarCuentaController</a><ul class='methods'><li data-type='method'><a href="ConsultarCuentaController.html#.getAllCuentas">getAllCuentas</a></li><li data-type='method'><a href="ConsultarCuentaController.html#.getPeriodo">getPeriodo</a></li></ul></li><li><a href="CreditoHipotecarioController.html">CreditoHipotecarioController</a><ul class='methods'><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.getOne">getOne</a></li></ul></li><li><a href="CuentasController.html">CuentasController</a><ul class='methods'><li data-type='method'><a href="CuentasController.html#.createCredit">createCredit</a></li><li data-type='method'><a href="CuentasController.html#.createDebit">createDebit</a></li><li data-type='method'><a href="CuentasController.html#.getAll">getAll</a></li><li data-type='method'><a href="CuentasController.html#.getOne">getOne</a></li><li data-type='method'><a href="CuentasController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DataController.html">DataController</a><ul class='methods'><li data-type='method'><a href="DataController.html#.getData">getData</a></li></ul></li><li><a href="DepositarController.html">DepositarController</a><ul class='methods'><li data-type='method'><a href="DepositarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DineroDisponibleController.html">DineroDisponibleController</a><ul class='methods'><li data-type='method'><a href="DineroDisponibleController.html#.getAll">getAll</a></li></ul></li><li><a href="EmpleadoController.html">EmpleadoController</a><ul class='methods'><li data-type='method'><a href="EmpleadoController.html#.create">create</a></li><li data-type='method'><a href="EmpleadoController.html#.getAll">getAll</a></li><li data-type='method'><a href="EmpleadoController.html#.getOne">getOne</a></li><li data-type='method'><a href="EmpleadoController.html#.login">login</a></li><li data-type='method'><a href="EmpleadoController.html#.update">update</a></li></ul></li><li><a href="ReponerTarjetaController.html">ReponerTarjetaController</a><ul class='methods'><li data-type='method'><a href="ReponerTarjetaController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RetirarController.html">RetirarController</a><ul class='methods'><li data-type='method'><a href="RetirarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RoleController.html">RoleController</a><ul class='methods'><li data-type='method'><a href="RoleController.html#.getAll">getAll</a></li></ul></li><li><a href="SucursalController.html">SucursalController</a><ul class='methods'><li data-type='method'><a href="SucursalController.html#.getAll">getAll</a></li></ul></li><li><a href="TransaccionController.html">TransaccionController</a><ul class='methods'><li data-type='method'><a href="TransaccionController.html#.getAll">getAll</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api.html">api</a></li><li><a href="module-utils.bncrypt.utils.module_bncrypt.html">bncrypt</a><ul class='methods'><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.hashPassword">hashPassword</a></li><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.verifyPassword">verifyPassword</a></li></ul></li><li><a href="utils.module_sequelizeOptions.html">sequelizeOptions</a><ul class='methods'><li data-type='method'><a href="utils.module_sequelizeOptions.html#.filter">filter</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.pageLimit">pageLimit</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.paginate">paginate</a></li></ul></li><li><a href="utils.module_tokenGenerator.html">tokenGenerator</a><ul class='methods'><li data-type='method'><a href="utils.module_tokenGenerator.html#~token_">token_</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">api</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description usertext"><p>All the routes that work in the project on Bankmex need a prefix &quot;/api/v1/&quot;, and all need to be auth to access, except for login route.</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="Areasgetall"><span class="type-signature">(route) </span>Areas get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line155">line 155</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/areas</td>
+                            </tr>
+                            </table>
+                            <p>Get all areas
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Avalescreateone"><span class="type-signature">(route) </span>Avales create one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line185">line 185</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/avales</td>
+                            </tr>
+                            </table>
+                            <p>Create one avales to a credit card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval lasname.</td>
+          </tr><tr>
+            <td class="name">domicilio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address.</td>
+          </tr><tr>
+            <td class="name">noexterior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address external number.</td>
+          </tr><tr>
+            <td class="name">nointerior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address internal number.</td>
+          </tr><tr>
+            <td class="name">cp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval postal code.</td>
+          </tr><tr>
+            <td class="name">colonia</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval neiborhood name.</td>
+          </tr><tr>
+            <td class="name">municipio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval municipal area name.</td>
+          </tr><tr>
+            <td class="name">ciudad</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval city.</td>
+          </tr><tr>
+            <td class="name">estado</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval state area name.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval email.</td>
+          </tr><tr>
+            <td class="name">celular</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval celphone number.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval phone home number.</td>
+          </tr><tr>
+            <td class="name">CreditoId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Aval credit card id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Avalesdeleteone"><span class="type-signature">(route) </span>Avales delete one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line230">line 230</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">DELETE</td>
+                            <td class="name last">/api/v1/avales</td>
+                            </tr>
+                            </table>
+                            <p>Delete one aveles from a credit card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">CreditoId</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval credit card id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Avalesgetall"><span class="type-signature">(route) </span>Avales get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line176">line 176</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/aval</td>
+                            </tr>
+                            </table>
+                            <p>Get all avales for a card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">CreditoId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Card id for credit acount.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Avalesupdateone"><span class="type-signature">(route) </span>Avales update one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/avales</td>
+                            </tr>
+                            </table>
+                            <p>Edit one avales from a credit card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval id.</td>
+          </tr><tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval lasname.</td>
+          </tr><tr>
+            <td class="name">domicilio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address.</td>
+          </tr><tr>
+            <td class="name">noexterior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address external number.</td>
+          </tr><tr>
+            <td class="name">nointerior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval address internal number.</td>
+          </tr><tr>
+            <td class="name">cp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval postal code.</td>
+          </tr><tr>
+            <td class="name">colonia</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval neiborhood name.</td>
+          </tr><tr>
+            <td class="name">municipio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval municipal area name.</td>
+          </tr><tr>
+            <td class="name">ciudad</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval city.</td>
+          </tr><tr>
+            <td class="name">estado</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval state area name.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval email.</td>
+          </tr><tr>
+            <td class="name">celular</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval celphone number.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Aval phone home number.</td>
+          </tr><tr>
+            <td class="name">CreditoId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Aval credit card id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Beneficiariocreateone"><span class="type-signature">(route) </span>Beneficiario create one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line287">line 287</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/beneficiarios</td>
+                            </tr>
+                            </table>
+                            <p>Create a new beneficiary for a card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary lastname.</td>
+          </tr><tr>
+            <td class="name">fechanacimiento</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary birthdate.</td>
+          </tr><tr>
+            <td class="name">parentezco</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary relationship.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary phone number.</td>
+          </tr><tr>
+            <td class="name">porcentaje</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary percentage of the account.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary email.</td>
+          </tr><tr>
+            <td class="name">TarjetaId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Card id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Beneficiariogetone"><span class="type-signature">(route) </span>Beneficiario get one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line278">line 278</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/beneficiario</td>
+                            </tr>
+                            </table>
+                            <p>Get a beneficiario for card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Beneficiary id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Beneficiarioupdateone"><span class="type-signature">(route) </span>Beneficiario update one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line303">line 303</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/beneficiarios</td>
+                            </tr>
+                            </table>
+                            <p>Update beneficiary to get new data on it
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Beneficiary id.</td>
+          </tr><tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary lastname.</td>
+          </tr><tr>
+            <td class="name">fechanacimiento</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary birthdate.</td>
+          </tr><tr>
+            <td class="name">parentezco</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary relationship.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary phone number.</td>
+          </tr><tr>
+            <td class="name">porcentaje</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary percentage of the account.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Beneficary email.</td>
+          </tr><tr>
+            <td class="name">TarjetaId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Card id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Clientecreateone"><span class="type-signature">(route) </span>Cliente create one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line389">line 389</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/clientes</td>
+                            </tr>
+                            </table>
+                            <p>Create a client to allow get credits or cards
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client lastname.</td>
+          </tr><tr>
+            <td class="name">rfc</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client record to taxes.</td>
+          </tr><tr>
+            <td class="name">curp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client id in Curp.</td>
+          </tr><tr>
+            <td class="name">fechanacimiento</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client.</td>
+          </tr><tr>
+            <td class="name">genero</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client gender.</td>
+          </tr><tr>
+            <td class="name">domicilio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client address.</td>
+          </tr><tr>
+            <td class="name">noexterior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client external house number.</td>
+          </tr><tr>
+            <td class="name">nointerior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client internal house number.</td>
+          </tr><tr>
+            <td class="name">cp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client postal code.</td>
+          </tr><tr>
+            <td class="name">colonia</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client home neiborhood.</td>
+          </tr><tr>
+            <td class="name">municipio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client municipal name.</td>
+          </tr><tr>
+            <td class="name">ciudad</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client city name.</td>
+          </tr><tr>
+            <td class="name">estado</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client state name.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client email.</td>
+          </tr><tr>
+            <td class="name">celular</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client cellphone number.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client house number.</td>
+          </tr><tr>
+            <td class="name">EmpleadoId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Employee id that create this client.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Clientedata"><span class="type-signature">(route) </span>Cliente data<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line163">line 163</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/cuentas</td>
+                            </tr>
+                            </table>
+                            <p>Get client data
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">notarjeta</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Card number.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Clientegetone"><span class="type-signature">(route) </span>Cliente get one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line380">line 380</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/cliente</td>
+                            </tr>
+                            </table>
+                            <p>Get a specific client to see details
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">curp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client idenfidical id in curp.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Clienteupdateone"><span class="type-signature">(route) </span>Cliente update one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line415">line 415</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/clientes</td>
+                            </tr>
+                            </table>
+                            <p>Update a client to change some params
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client id.</td>
+          </tr><tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client lastname.</td>
+          </tr><tr>
+            <td class="name">rfc</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client record to taxes.</td>
+          </tr><tr>
+            <td class="name">curp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client id in Curp.</td>
+          </tr><tr>
+            <td class="name">fechanacimiento</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client.</td>
+          </tr><tr>
+            <td class="name">genero</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client gender.</td>
+          </tr><tr>
+            <td class="name">domicilio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client address.</td>
+          </tr><tr>
+            <td class="name">noexterior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client external house number.</td>
+          </tr><tr>
+            <td class="name">nointerior</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client internal house number.</td>
+          </tr><tr>
+            <td class="name">cp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client postal code.</td>
+          </tr><tr>
+            <td class="name">colonia</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client home neiborhood.</td>
+          </tr><tr>
+            <td class="name">municipio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client municipal name.</td>
+          </tr><tr>
+            <td class="name">ciudad</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client city name.</td>
+          </tr><tr>
+            <td class="name">estado</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client state name.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client email.</td>
+          </tr><tr>
+            <td class="name">celular</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client cellphone number.</td>
+          </tr><tr>
+            <td class="name">telefono</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client house number.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Creditocreateone"><span class="type-signature">(route) </span>Credito create one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line329">line 329</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/hipotecarios</td>
+                            </tr>
+                            </table>
+                            <p>Create a mortgage credit for a client
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">trabajo</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client job.</td>
+          </tr><tr>
+            <td class="name">salario</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client anual salary.</td>
+          </tr><tr>
+            <td class="name">patrimonio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">What client is going to buy.</td>
+          </tr><tr>
+            <td class="name">ambiguedad</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">How many years has the client working there.</td>
+          </tr><tr>
+            <td class="name">zona</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Zone in city where is client job.</td>
+          </tr><tr>
+            <td class="name">monto</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Amount of money asked for the client.</td>
+          </tr><tr>
+            <td class="name">ClientId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Creditogetone"><span class="type-signature">(route) </span>Credito get one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line320">line 320</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/hipotecario</td>
+                            </tr>
+                            </table>
+                            <p>Get a mortgage credit for a client
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Mortgage id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Creditoupdateone"><span class="type-signature">(route) </span>Credito update one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line344">line 344</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/hipotecarios</td>
+                            </tr>
+                            </table>
+                            <p>Update a mortgage credit for a client
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Mortgage credit id.</td>
+          </tr><tr>
+            <td class="name">trabajo</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client job.</td>
+          </tr><tr>
+            <td class="name">salario</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client anual salary.</td>
+          </tr><tr>
+            <td class="name">patrimonio</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">What client is going to buy.</td>
+          </tr><tr>
+            <td class="name">ambiguedad</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">How many years has the client working there.</td>
+          </tr><tr>
+            <td class="name">zona</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Zone in city where is client job.</td>
+          </tr><tr>
+            <td class="name">monto</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Amount of money asked for the client.</td>
+          </tr><tr>
+            <td class="name">ClientId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client id.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Empleadoscreateone"><span class="type-signature">(route) </span>Empleados create one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line104">line 104</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/empleados</td>
+                            </tr>
+                            </table>
+                            <p>Create a new employee
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Employee's name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Employee's lastname.</td>
+          </tr><tr>
+            <td class="name">status</td>
+            <td class="type">Boolean</td>
+            
+            
+            <td class="description last">Employee's status.</td>
+          </tr><tr>
+            <td class="name">username</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Employee's username.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Employee's email.</td>
+          </tr><tr>
+            <td class="name">password</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Employee's password.</td>
+          </tr><tr>
+            <td class="name">AreaId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Area destinated to this employee.</td>
+          </tr><tr>
+            <td class="name">SucursalId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Sucursal destinated to this employee.</td>
+          </tr><tr>
+            <td class="name">RoleId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Role destinated to this employee.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Empleadosgetall"><span class="type-signature">(route) </span>Empleados get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line82">line 82</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/empleados</td>
+                            </tr>
+                            </table>
+                            <p>Get all Empleados
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Query Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th>Default</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">page</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            <td class="default">0</td>
+            <td class="description last">Current page.</td>
+          </tr><tr>
+            <td class="name">amount</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            <td class="default">10</td>
+            <td class="description last">quantity of records.</td>
+          </tr><tr>
+            <td class="name">sort</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            <td class="default">null</td>
+            <td class="description last">DESC or ASC or null.</td>
+          </tr><tr>
+            <td class="name">role</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            <td class="default">null</td>
+            <td class="description last">Role id.</td>
+          </tr><tr>
+            <td class="name">search</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            <td class="default">null</td>
+            <td class="description last">fragment of employee's name.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Empleadosgetone"><span class="type-signature">(route) </span>Empleados get one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line95">line 95</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/empleados/:id</td>
+                            </tr>
+                            </table>
+                            <p>Get details for one employee
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Route Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last"><p>Empleados id</p></td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Empleadosupdateone"><span class="type-signature">(route) </span>Empleados update one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/empleados/:id</td>
+                            </tr>
+                            </table>
+                            <p>Edit an employee
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">nombre</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's name.</td>
+          </tr><tr>
+            <td class="name">apellido</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's lastname.</td>
+          </tr><tr>
+            <td class="name">status</td>
+            <td class="type">Boolean</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's status.</td>
+          </tr><tr>
+            <td class="name">username</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's username.</td>
+          </tr><tr>
+            <td class="name">email</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's email.</td>
+          </tr><tr>
+            <td class="name">password</td>
+            <td class="type">String</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Employee's password.</td>
+          </tr><tr>
+            <td class="name">AreaId</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Area destinated to this employee.</td>
+          </tr><tr>
+            <td class="name">SucursalId</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Sucursal destinated to this employee.</td>
+          </tr><tr>
+            <td class="name">RoleId</td>
+            <td class="type">Number</td>
+            <td class="attributes">optional</td>
+            
+            <td class="description last">Role destinated to this employee.</td>
+          </tr>
+          </table>
+                            <h5>Route Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last"><p>Employee's id</p></td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Login"><span class="type-signature">(route) </span>Login<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/login</td>
+                            </tr>
+                            </table>
+                            <p>Login</p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">username</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">User's username or nickname.</td>
+          </tr><tr>
+            <td class="name">password</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">User's password.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Rolesgetall"><span class="type-signature">(route) </span>Roles get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line139">line 139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/roles</td>
+                            </tr>
+                            </table>
+                            <p>Get all roles
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Sucursalesgetall"><span class="type-signature">(route) </span>Sucursales get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line147">line 147</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/sucursales</td>
+                            </tr>
+                            </table>
+                            <p>Get all branches
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetaavailablemoney"><span class="type-signature">(route) </span>Tarjeta available money<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/login</td>
+                            </tr>
+                            </table>
+                            <p>Available money for an card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetacreatecreditcard"><span class="type-signature">(route) </span>Tarjeta create credit card<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line248">line 248</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/credito</td>
+                            </tr>
+                            </table>
+                            <p>Create a credit card for a client
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">saldo</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Money amount in on opened acount.</td>
+          </tr><tr>
+            <td class="name">ClienteId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client id to associate to this card.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetacreatedebitcard"><span class="type-signature">(route) </span>Tarjeta create debit card<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line258">line 258</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/debito</td>
+                            </tr>
+                            </table>
+                            <p>Create a debit card for a client
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">ClienteId</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Client id to associate to this card.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetagetallforaclient"><span class="type-signature">(route) </span>Tarjeta get all for a client<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line360">line 360</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/cuentas</td>
+                            </tr>
+                            </table>
+                            <p>Get all cards for a client in a list
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">curp</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Client CURP.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetagetone"><span class="type-signature">(route) </span>Tarjeta get one<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line239">line 239</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/tarjetas</td>
+                            </tr>
+                            </table>
+                            <p>Get details of one card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">notarjeta</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Card number in string.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetareposition"><span class="type-signature">(route) </span>Tarjeta reposition<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line55">line 55</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/retirar</td>
+                            </tr>
+                            </table>
+                            <p>A reposition for a card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">notarjeta</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Card number.</td>
+          </tr><tr>
+            <td class="name">motivo</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Reason of reposition.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Tarjetaupdate"><span class="type-signature">(route) </span>Tarjeta update<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line267">line 267</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/tarjetas</td>
+                            </tr>
+                            </table>
+                            <p>Update tarjeta, get a new one
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">id</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Card id.</td>
+          </tr><tr>
+            <td class="name">fechavencimiento</td>
+            <td class="type">Date</td>
+            
+            
+            <td class="description last">New date for card.</td>
+          </tr><tr>
+            <td class="name">estado</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">New state for the card.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Transaccionescardwithdraw"><span class="type-signature">(route) </span>Transacciones card withdraw<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">PUT</td>
+                            <td class="name last">/api/v1/retirar</td>
+                            </tr>
+                            </table>
+                            <p>Withdraw money from a card
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">notarjeta</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Card number.</td>
+          </tr><tr>
+            <td class="name">saldo</td>
+            <td class="type">Number</td>
+            
+            
+            <td class="description last">Amount to withdraw.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Transaccionesgetall"><span class="type-signature">(route) </span>Transacciones get all<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line369">line 369</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">POST</td>
+                            <td class="name last">/api/v1/periodo</td>
+                            </tr>
+                            </table>
+                            <p>Get all the historical transactions in a range of dates
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+                            <h5>Body Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                
+                
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tr>
+            <td class="name">notarjeta</td>
+            <td class="type">String</td>
+            
+            
+            <td class="description last">Card number.</td>
+          </tr><tr>
+            <td class="name">FechaFinal</td>
+            <td class="type">Date</td>
+            
+            
+            <td class="description last">Date where start the range.</td>
+          </tr><tr>
+            <td class="name">FechaInicial</td>
+            <td class="type">Date</td>
+            
+            
+            <td class="description last">Date where ends the range.</td>
+          </tr>
+          </table>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="Transaccionesgetinlist"><span class="type-signature">(route) </span>Transacciones get in list<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="routes_routes.js.html">routes/routes.js</a>, <a href="routes_routes.js.html#line441">line 441</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <h5>Route:</h5>
+                            <table class="params">
+                            <thead><tr><th>Method</th><th class="last">Path</th></tr></thead>
+                            <tr>
+                            <td class="type">GET</td>
+                            <td class="name last">/api/v1/transacciones</td>
+                            </tr>
+                            </table>
+                            <p>Get all the transactions in historical
+<h5>Authentication</h5>
+<p>This route requires HTTP Bearer Authentication.</p></p>
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Apr 28 2022 13:33:32 GMT-0500 (Central Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

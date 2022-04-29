@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>sequelizeOptions - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AreaController.html">AreaController</a><ul class='methods'><li data-type='method'><a href="AreaController.html#.getAll">getAll</a></li></ul></li><li><a href="AvalesController.html">AvalesController</a><ul class='methods'><li data-type='method'><a href="AvalesController.html#.createOne">createOne</a></li><li data-type='method'><a href="AvalesController.html#.deleteOne">deleteOne</a></li><li data-type='method'><a href="AvalesController.html#.getOne">getOne</a></li><li data-type='method'><a href="AvalesController.html#.updateOne">updateOne</a></li></ul></li><li><a href="BeneficiarioController.html">BeneficiarioController</a><ul class='methods'><li data-type='method'><a href="BeneficiarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.getOne">getOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.updateOne">updateOne</a></li></ul></li><li><a href="ClientesController.html">ClientesController</a><ul class='methods'><li data-type='method'><a href="ClientesController.html#.createClient">createClient</a></li><li data-type='method'><a href="ClientesController.html#.getClient">getClient</a></li><li data-type='method'><a href="ClientesController.html#.getData">getData</a></li><li data-type='method'><a href="ClientesController.html#.updateClient">updateClient</a></li></ul></li><li><a href="ConsultarCuentaController.html">ConsultarCuentaController</a><ul class='methods'><li data-type='method'><a href="ConsultarCuentaController.html#.getAllCuentas">getAllCuentas</a></li><li data-type='method'><a href="ConsultarCuentaController.html#.getPeriodo">getPeriodo</a></li></ul></li><li><a href="CreditoHipotecarioController.html">CreditoHipotecarioController</a><ul class='methods'><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.getOne">getOne</a></li></ul></li><li><a href="CuentasController.html">CuentasController</a><ul class='methods'><li data-type='method'><a href="CuentasController.html#.createCredit">createCredit</a></li><li data-type='method'><a href="CuentasController.html#.createDebit">createDebit</a></li><li data-type='method'><a href="CuentasController.html#.getAll">getAll</a></li><li data-type='method'><a href="CuentasController.html#.getOne">getOne</a></li><li data-type='method'><a href="CuentasController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DataController.html">DataController</a><ul class='methods'><li data-type='method'><a href="DataController.html#.getData">getData</a></li></ul></li><li><a href="DepositarController.html">DepositarController</a><ul class='methods'><li data-type='method'><a href="DepositarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DineroDisponibleController.html">DineroDisponibleController</a><ul class='methods'><li data-type='method'><a href="DineroDisponibleController.html#.getAll">getAll</a></li></ul></li><li><a href="EmpleadoController.html">EmpleadoController</a><ul class='methods'><li data-type='method'><a href="EmpleadoController.html#.create">create</a></li><li data-type='method'><a href="EmpleadoController.html#.getAll">getAll</a></li><li data-type='method'><a href="EmpleadoController.html#.getOne">getOne</a></li><li data-type='method'><a href="EmpleadoController.html#.login">login</a></li><li data-type='method'><a href="EmpleadoController.html#.update">update</a></li></ul></li><li><a href="ReponerTarjetaController.html">ReponerTarjetaController</a><ul class='methods'><li data-type='method'><a href="ReponerTarjetaController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RetirarController.html">RetirarController</a><ul class='methods'><li data-type='method'><a href="RetirarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RoleController.html">RoleController</a><ul class='methods'><li data-type='method'><a href="RoleController.html#.getAll">getAll</a></li></ul></li><li><a href="SucursalController.html">SucursalController</a><ul class='methods'><li data-type='method'><a href="SucursalController.html#.getAll">getAll</a></li></ul></li><li><a href="TransaccionController.html">TransaccionController</a><ul class='methods'><li data-type='method'><a href="TransaccionController.html#.getAll">getAll</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api.html">api</a></li><li><a href="module-utils.bncrypt.utils.module_bncrypt.html">bncrypt</a><ul class='methods'><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.hashPassword">hashPassword</a></li><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.verifyPassword">verifyPassword</a></li></ul></li><li><a href="utils.module_sequelizeOptions.html">sequelizeOptions</a><ul class='methods'><li data-type='method'><a href="utils.module_sequelizeOptions.html#.filter">filter</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.pageLimit">pageLimit</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.paginate">paginate</a></li></ul></li><li><a href="utils.module_tokenGenerator.html">tokenGenerator</a><ul class='methods'><li data-type='method'><a href="utils.module_tokenGenerator.html#~token_">token_</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">sequelizeOptions</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_sequelizeOptions.js.html">utils/sequelizeOptions.js</a>, <a href="utils_sequelizeOptions.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".filter"><span class="type-signature">(static) </span>filter<span class="signature">(search, role)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_sequelizeOptions.js.html">utils/sequelizeOptions.js</a>, <a href="utils_sequelizeOptions.js.html#line47">line 47</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Params for filter reaquest</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>search</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Part of search string</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>role</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number of role|</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Object with some paramether to filter in a list from sequelize</p>
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".pageLimit"><span class="type-signature">(static) </span>pageLimit<span class="signature">(page, amount, sort)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_sequelizeOptions.js.html">utils/sequelizeOptions.js</a>, <a href="utils_sequelizeOptions.js.html#line13">line 13</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Options to generate</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>page</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Page that is requested to show</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>How many records are going to diplay</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sort</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>'DESC' || 'DESC' || null</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Object that has some options for sequelize to create pagination</p>
+</div>
+
+
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".paginate"><span class="type-signature">(static) </span>paginate<span class="signature">(rows, page, amount)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="utils_sequelizeOptions.js.html">utils/sequelizeOptions.js</a>, <a href="utils_sequelizeOptions.js.html#line30">line 30</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>Respone params for pagination</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rows</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Total number of records in DB</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>page</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Current Page</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>amount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Amount per page</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Object with respone params for pagination</p>
+</div>
+
+
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Apr 28 2022 13:33:32 GMT-0500 (Central Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

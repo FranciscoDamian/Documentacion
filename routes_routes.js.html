@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>routes/routes.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AreaController.html">AreaController</a><ul class='methods'><li data-type='method'><a href="AreaController.html#.getAll">getAll</a></li></ul></li><li><a href="AvalesController.html">AvalesController</a><ul class='methods'><li data-type='method'><a href="AvalesController.html#.createOne">createOne</a></li><li data-type='method'><a href="AvalesController.html#.deleteOne">deleteOne</a></li><li data-type='method'><a href="AvalesController.html#.getOne">getOne</a></li><li data-type='method'><a href="AvalesController.html#.updateOne">updateOne</a></li></ul></li><li><a href="BeneficiarioController.html">BeneficiarioController</a><ul class='methods'><li data-type='method'><a href="BeneficiarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.getOne">getOne</a></li><li data-type='method'><a href="BeneficiarioController.html#.updateOne">updateOne</a></li></ul></li><li><a href="ClientesController.html">ClientesController</a><ul class='methods'><li data-type='method'><a href="ClientesController.html#.createClient">createClient</a></li><li data-type='method'><a href="ClientesController.html#.getClient">getClient</a></li><li data-type='method'><a href="ClientesController.html#.getData">getData</a></li><li data-type='method'><a href="ClientesController.html#.updateClient">updateClient</a></li></ul></li><li><a href="ConsultarCuentaController.html">ConsultarCuentaController</a><ul class='methods'><li data-type='method'><a href="ConsultarCuentaController.html#.getAllCuentas">getAllCuentas</a></li><li data-type='method'><a href="ConsultarCuentaController.html#.getPeriodo">getPeriodo</a></li></ul></li><li><a href="CreditoHipotecarioController.html">CreditoHipotecarioController</a><ul class='methods'><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.createOne">createOne</a></li><li data-type='method'><a href="CreditoHipotecarioController.html#.getOne">getOne</a></li></ul></li><li><a href="CuentasController.html">CuentasController</a><ul class='methods'><li data-type='method'><a href="CuentasController.html#.createCredit">createCredit</a></li><li data-type='method'><a href="CuentasController.html#.createDebit">createDebit</a></li><li data-type='method'><a href="CuentasController.html#.getAll">getAll</a></li><li data-type='method'><a href="CuentasController.html#.getOne">getOne</a></li><li data-type='method'><a href="CuentasController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DataController.html">DataController</a><ul class='methods'><li data-type='method'><a href="DataController.html#.getData">getData</a></li></ul></li><li><a href="DepositarController.html">DepositarController</a><ul class='methods'><li data-type='method'><a href="DepositarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="DineroDisponibleController.html">DineroDisponibleController</a><ul class='methods'><li data-type='method'><a href="DineroDisponibleController.html#.getAll">getAll</a></li></ul></li><li><a href="EmpleadoController.html">EmpleadoController</a><ul class='methods'><li data-type='method'><a href="EmpleadoController.html#.create">create</a></li><li data-type='method'><a href="EmpleadoController.html#.getAll">getAll</a></li><li data-type='method'><a href="EmpleadoController.html#.getOne">getOne</a></li><li data-type='method'><a href="EmpleadoController.html#.login">login</a></li><li data-type='method'><a href="EmpleadoController.html#.update">update</a></li></ul></li><li><a href="ReponerTarjetaController.html">ReponerTarjetaController</a><ul class='methods'><li data-type='method'><a href="ReponerTarjetaController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RetirarController.html">RetirarController</a><ul class='methods'><li data-type='method'><a href="RetirarController.html#.updateOne">updateOne</a></li></ul></li><li><a href="RoleController.html">RoleController</a><ul class='methods'><li data-type='method'><a href="RoleController.html#.getAll">getAll</a></li></ul></li><li><a href="SucursalController.html">SucursalController</a><ul class='methods'><li data-type='method'><a href="SucursalController.html#.getAll">getAll</a></li></ul></li><li><a href="TransaccionController.html">TransaccionController</a><ul class='methods'><li data-type='method'><a href="TransaccionController.html#.getAll">getAll</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api.html">api</a></li><li><a href="module-utils.bncrypt.utils.module_bncrypt.html">bncrypt</a><ul class='methods'><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.hashPassword">hashPassword</a></li><li data-type='method'><a href="module-utils.bncrypt.utils.module_bncrypt.html#.verifyPassword">verifyPassword</a></li></ul></li><li><a href="utils.module_sequelizeOptions.html">sequelizeOptions</a><ul class='methods'><li data-type='method'><a href="utils.module_sequelizeOptions.html#.filter">filter</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.pageLimit">pageLimit</a></li><li data-type='method'><a href="utils.module_sequelizeOptions.html#.paginate">paginate</a></li></ul></li><li><a href="utils.module_tokenGenerator.html">tokenGenerator</a><ul class='methods'><li data-type='method'><a href="utils.module_tokenGenerator.html#~token_">token_</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">routes/routes.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const express = require( 'express' );
+
+/**
+ * All the routes that work in the project on Bankmex need a prefix "/api/v1/", and all need to be auth to access, except for login route.
+ * @module api
+ */
+const router = express.Router();
+
+const api = require( '../helpers/api' )
+
+// middleware auth
+const auth = require( '../middlewares/auth.middleware' );
+
+// Controllers
+const depositarController = require( '../controllers/cajero/DepositarController' ); 
+const retirarController = require( '../controllers/cajero/RetirarController' );
+const reponerTarjetaController = require( '../controllers/cajero/ReponerTarjetaController' );
+const dineroDisponible = require( '../controllers/cajero/DineroDisponible' );
+const dataCliente = require( '../controllers/cajero/DataController' );
+const avalesController = require('../controllers/ejecutivo/AvalesController'); 
+const tarjetasController = require('../controllers/ejecutivo/CuentasController'); 
+const beneficiariosController = require('../controllers/ejecutivo/BeneficiariosController'); 
+const creditosController = require('../controllers/ejecutivo/CreditosController');
+const estadoCuentaController = require('../controllers/ejecutivo/ConsultarCuenta');
+const transaccionesController = require('../controllers/gerente/TransaccionesController');
+const empleadoController = require( '../controllers/gerente/EmpleadoController' );
+const clienteController = require( '../controllers/ejecutivo/ClientesController' );
+const areaController = require( '../controllers/gerente/AreaController' );
+const roleController = require( '../controllers/gerente/RoleController' );
+const sucursalController = require( '../controllers/gerente/SucursalController' );
+
+/**
+ * Deposit money from a card
+ * @name Transacciones card deposit 
+ * @function login
+ * @memberOf api/v1
+ * @path {PUT} /api/v1/depositar
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number.
+ * @body {Number} saldo - Amount to deposit.
+ * @service EmpleadoController
+ */
+router.put( `${ api.path }${ api.cajero.depositar }`, auth.cajero, depositarController.updateOne )
+
+/**
+ * Withdraw money from a card
+ * @name Transacciones card withdraw
+ * @path {PUT} /api/v1/retirar
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number.
+ * @body {Number} saldo - Amount to withdraw.
+ */
+router.put( `${ api.path }${ api.cajero.retirar }`, auth.cajero, retirarController.updateOne )
+
+/**
+ * A reposition for a card 
+ * @name Tarjeta reposition
+ * @path {PUT} /api/v1/retirar
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number.
+ * @body {String} motivo - Reason of reposition.
+ */
+router.put( `${ api.path }${ api.cajero.reponertarjera }`, auth.cajero, reponerTarjetaController.updateOne )
+
+/**
+ * Available money for an card
+ * @name Tarjeta available money
+ * @path {GET} /api/v1/login
+ * @auth This route requires HTTP Bearer Authentication.
+ */
+router.get( `${ api.path }${ api.cajero.dinerodisponible }`, auth.cajero, dineroDisponible.getAll )
+
+/**
+ * Login
+ * @name Login 
+ * @path {POST} /api/v1/login
+ * @body {String} username - User's username or nickname.
+ * @body {String} password - User's password.
+ */
+router.post( `${ api.path }${ api.login }`, empleadoController.login );
+
+/**
+ * Get all Empleados
+ * @name Empleados get all
+ * @path {GET} /api/v1/empleados
+ * @auth This route requires HTTP Bearer Authentication.
+ * @query {Number} [page=0] - Current page.
+ * @query {Number} [amount=10] - quantity of records.
+ * @query {String} [sort=null] - DESC or ASC or null.
+ * @query {Number} [role=null] - Role id.
+ * @query {String} [search=null] - fragment of employee's name.
+ */
+router.get( `${ api.path }${ api.gerente.empleados }`,auth.gerente, empleadoController.getAll )
+
+/**
+ * Get details for one employee
+ * @name Empleados get one
+ * @path {GET} /api/v1/empleados/:id
+ * @auth This route requires HTTP Bearer Authentication.
+ * @params {Number} id Empleados id
+ */
+router.get( `${ api.path }${ api.gerente.empleados }/:id`, auth.gerente, empleadoController.getOne )
+
+/**
+ * Create a new employee
+ * @name Empleados create one
+ * @path {POST} /api/v1/empleados
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} nombre - Employee's name.
+ * @body {String} apellido - Employee's lastname.
+ * @body {Boolean} status - Employee's status.
+ * @body {String} username - Employee's username.
+ * @body {String} email - Employee's email.
+ * @body {String} password - Employee's password.
+ * @body {Number} AreaId - Area destinated to this employee.
+ * @body {Number} SucursalId - Sucursal destinated to this employee.
+ * @body {Number} RoleId - Role destinated to this employee.
+ */
+router.post( `${ api.path }${ api.gerente.empleados }`, auth.gerente, empleadoController.create )
+
+/**
+ * Edit an employee
+ * @name Empleados update one
+ * @path {PUT} /api/v1/empleados/:id
+ * @auth This route requires HTTP Bearer Authentication.
+ * @params {Number} id - Employee's id
+ * @body {String} [nombre] - Employee's name.
+ * @body {String} [apellido] - Employee's lastname.
+ * @body {Boolean} [status] - Employee's status.
+ * @body {String} [username] - Employee's username.
+ * @body {String} [email] - Employee's email.
+ * @body {String} [password] - Employee's password.
+ * @body {Number} [AreaId] - Area destinated to this employee.
+ * @body {Number} [SucursalId] - Sucursal destinated to this employee.
+ * @body {Number} [RoleId] - Role destinated to this employee.
+ */
+router.put( `${ api.path }${ api.gerente.empleados }/:id`, auth.gerente, empleadoController.updateOne )
+
+/**
+ * Get all roles
+ * @name Roles get all
+ * @path {GET} /api/v1/roles
+ * @auth This route requires HTTP Bearer Authentication.
+ */
+router.get( `${ api.path }${ api.gerente.roles }`, auth.gerente, roleController.getAll )
+
+/**
+ * Get all branches
+ * @name Sucursales get all
+ * @path {GET} /api/v1/sucursales
+ * @auth This route requires HTTP Bearer Authentication.
+ */
+router.get( `${ api.path }${ api.gerente.sucursales }`, auth.gerente, sucursalController.getAll )
+
+/**
+ * Get all areas
+ * @name Areas get all
+ * @path {GET} /api/v1/areas
+ * @auth This route requires HTTP Bearer Authentication.
+ */
+router.get( `${ api.path }${ api.gerente.areas }`, auth.gerente, areaController.getAll )
+
+/**
+ * Get client data
+ * @name Cliente data
+ * @path {POST} /api/v1/cuentas
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number.
+ * 
+ */
+router.post( `${ api.path }${ api.cajero.datoscliente }`, auth.cajero, dataCliente.getData )
+
+
+// router.get(`${ api.path }${ api.ejecutivo.cuentas }` , auth.ejecutivo, tarjetasController.getAll)
+
+/**
+ * Get all avales for a card
+ * @name Avales get all
+ * @path {POST} /api/v1/aval
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} CreditoId - Card id for credit acount.
+ */
+router.post(  `${ api.path }${ api.ejecutivo.aval }`, auth.ejecutivo , avalesController.getOne)
+
+/**
+ * Create one avales to a credit card
+ * @name Avales create one
+ * @path {POST} /api/v1/avales
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} nombre - Aval name.
+ * @body {String} apellido - Aval lasname.
+ * @body {String} domicilio - Aval address.
+ * @body {String} noexterior - Aval address external number.
+ * @body {String} nointerior - Aval address internal number.
+ * @body {String} cp - Aval postal code.
+ * @body {String} colonia - Aval neiborhood name.
+ * @body {String} municipio - Aval municipal area name.
+ * @body {String} ciudad - Aval city.
+ * @body {String} estado - Aval state area name.
+ * @body {String} email - Aval email.
+ * @body {String} celular - Aval celphone number.
+ * @body {String} telefono - Aval phone home number.
+ * @body {Number} CreditoId - Aval credit card id.
+ */
+router.post(`${ api.path }${ api.ejecutivo.avales }`, auth.ejecutivo , avalesController.createOne)
+
+/**
+ * Edit one avales from a credit card
+ * @name Avales update one
+ * @path {PUT} /api/v1/avales
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} id - Aval id.
+ * @body {String} nombre - Aval name.
+ * @body {String} apellido - Aval lasname.
+ * @body {String} domicilio - Aval address.
+ * @body {String} noexterior - Aval address external number.
+ * @body {String} nointerior - Aval address internal number.
+ * @body {String} cp - Aval postal code.
+ * @body {String} colonia - Aval neiborhood name.
+ * @body {String} municipio - Aval municipal area name.
+ * @body {String} ciudad - Aval city.
+ * @body {String} estado - Aval state area name.
+ * @body {String} email - Aval email.
+ * @body {String} celular - Aval celphone number.
+ * @body {String} telefono - Aval phone home number.
+ * @body {Number} CreditoId - Aval credit card id.
+ */
+router.put(`${ api.path }${ api.ejecutivo.avales }`, auth.ejecutivo , avalesController.updateOne)
+
+/**
+ * Delete one aveles from a credit card
+ * @name Avales delete one
+ * @path {DELETE} /api/v1/avales
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} CreditoId - Aval credit card id.
+ */
+router.delete(`${ api.path }${ api.ejecutivo.avales }`, auth.ejecutivo , avalesController.deleteOne) 
+
+/**
+ * Get details of one card
+ * @name Tarjeta get one
+ * @path {POST} /api/v1/tarjetas
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number in string.
+ */
+router.post(`${ api.path }${ api.ejecutivo.tarjetas }`, auth.ejecutivo , tarjetasController.getOne)
+
+/**
+ * Create a credit card for a client
+ * @name Tarjeta create credit card
+ * @path {POST} /api/v1/credito
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} saldo - Money amount in on opened acount.
+ * @body {Number} ClienteId - Client id to associate to this card.
+ */
+router.post(`${ api.path }${ api.ejecutivo.credito }`, auth.ejecutivo, tarjetasController.createCredit)
+
+/**
+ * Create a debit card for a client
+ * @name Tarjeta create debit card
+ * @path {POST} /api/v1/debito
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} ClienteId - Client id to associate to this card.
+ */
+router.post(`${ api.path }${ api.ejecutivo.debito }`, auth.ejecutivo, tarjetasController.createDebit)  
+
+/**
+ * Update tarjeta, get a new one
+ * @name Tarjeta update
+ * @path {PUT} /api/v1/tarjetas
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Card id.
+ * @body {Date} fechavencimiento - New date for card.
+ * @body {String} estado - New state for the card.
+ */
+router.put(`${ api.path }${ api.ejecutivo.tarjetas }`, auth.ejecutivo, tarjetasController.updateOne)
+
+/**
+ * Get a beneficiario for card
+ * @name Beneficiario get one
+ * @path {PUT} /api/v1/beneficiario
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Beneficiary id.
+ */
+router.post(`${ api.path }${ api.ejecutivo.beneficiario }`, auth.ejecutivo, beneficiariosController.getOne)
+
+/**
+ * Create a new beneficiary for a card
+ * @name Beneficiario create one
+ * @path {PUT} /api/v1/beneficiarios
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} nombre - Beneficary name.
+ * @body {String} apellido - Beneficary lastname.
+ * @body {String} fechanacimiento - Beneficary birthdate.
+ * @body {String} parentezco - Beneficary relationship.
+ * @body {String} telefono - Beneficary phone number.
+ * @body {String} porcentaje - Beneficary percentage of the account.
+ * @body {String} email - Beneficary email.
+ * @body {Number} TarjetaId - Card id.
+ */
+router.post(`${ api.path }${ api.ejecutivo.beneficiarios }`, auth.ejecutivo, beneficiariosController.createOne)
+
+/**
+ * Update beneficiary to get new data on it
+ * @name Beneficiario update one
+ * @path {PUT} /api/v1/beneficiarios
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Beneficiary id.
+ * @body {String} nombre - Beneficary name.
+ * @body {String} apellido - Beneficary lastname.
+ * @body {String} fechanacimiento - Beneficary birthdate.
+ * @body {String} parentezco - Beneficary relationship.
+ * @body {String} telefono - Beneficary phone number.
+ * @body {String} porcentaje - Beneficary percentage of the account.
+ * @body {String} email - Beneficary email.
+ * @body {Number} TarjetaId - Card id.
+ */
+router.put(`${ api.path }${ api.ejecutivo.beneficiarios }`, auth.ejecutivo, beneficiariosController.updateOne)
+
+/**
+ * Get a mortgage credit for a client
+ * @name Credito get one
+ * @path {POST} /api/v1/hipotecario
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Mortgage id.
+ */
+router.post(`${ api.path }${ api.ejecutivo.hipotecario }`, auth.ejecutivo, creditosController.getOne)
+
+/**
+ * Create a mortgage credit for a client
+ * @name Credito create one
+ * @path {POST} /api/v1/hipotecarios
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} trabajo - Client job.
+ * @body {Number} salario - Client anual salary.
+ * @body {String} patrimonio - What client is going to buy.
+ * @body {Number} ambiguedad - How many years has the client working there.
+ * @body {String} zona - Zone in city where is client job.
+ * @body {Number} monto - Amount of money asked for the client.
+ * @body {Number} ClientId - Client id.
+ */
+router.post(`${ api.path }${ api.ejecutivo.hipotecarios }`, auth.ejecutivo, creditosController.createOne)
+
+/**
+ * Update a mortgage credit for a client
+ * @name Credito update one
+ * @path {PUT} /api/v1/hipotecarios
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Mortgage credit id.
+ * @body {String} trabajo - Client job.
+ * @body {Number} salario - Client anual salary.
+ * @body {String} patrimonio - What client is going to buy.
+ * @body {Number} ambiguedad - How many years has the client working there.
+ * @body {String} zona - Zone in city where is client job.
+ * @body {Number} monto - Amount of money asked for the client.
+ * @body {Number} ClientId - Client id.
+ */
+router.put(`${ api.path }${ api.ejecutivo.hipotecarios }`, auth.ejecutivo, creditosController.updateOne)   
+
+/**
+ * Get all cards for a client in a list
+ * @name Tarjeta get all for a client
+ * @path {GET} /api/v1/cuentas
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} curp - Client CURP.
+ */
+router.get(`${ api.path }${ api.ejecutivo.cuentas }`, auth.ejecutivo, estadoCuentaController.getAllCuentas)
+
+/**
+ * Get all the historical transactions in a range of dates
+ * @name Transacciones get all 
+ * @path {POST} /api/v1/periodo
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} notarjeta - Card number.
+ * @body {Date} FechaFinal - Date where start the range.
+ * @body {Date} FechaInicial - Date where ends the range.
+ */
+router.post(`${ api.path }${ api.ejecutivo.periodo }`, auth.ejecutivo, estadoCuentaController.getPeriodo)
+
+/**
+ * Get a specific client to see details
+ * @name Cliente get one
+ * @path {POST} /api/v1/cliente
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} curp - Client idenfidical id in curp.
+ */
+router.post(`${ api.path }${ api.ejecutivo.cliente }`, auth.ejecutivo, clienteController.getClient) 
+
+/**
+ * Create a client to allow get credits or cards
+ * @name Cliente create one
+ * @path {POST} /api/v1/clientes
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {String} nombre - Client name.
+ * @body {String} apellido - Client lastname.
+ * @body {String} rfc - Client record to taxes.
+ * @body {String} curp - Client id in Curp.
+ * @body {String} fechanacimiento - Client.
+ * @body {String} genero - Client gender.
+ * @body {String} domicilio - Client address.
+ * @body {String} noexterior - Client external house number.
+ * @body {String} nointerior - Client internal house number.
+ * @body {String} cp - Client postal code.
+ * @body {String} colonia - Client home neiborhood.
+ * @body {String} municipio - Client municipal name.
+ * @body {String} ciudad - Client city name.
+ * @body {String} estado - Client state name.
+ * @body {String} email - Client email.
+ * @body {String} celular - Client cellphone number.
+ * @body {String} telefono - Client house number.
+ * @body {Number} EmpleadoId - Employee id that create this client.
+ */
+router.post(`${ api.path }${ api.ejecutivo.clientes }`, auth.ejecutivo, clienteController.createClient)
+
+/**
+ * Update a client to change some params
+ * @name Cliente update one
+ * @path {PUT} /api/v1/clientes
+ * @auth This route requires HTTP Bearer Authentication.
+ * @body {Number} id - Client id.
+ * @body {String} nombre - Client name.
+ * @body {String} apellido - Client lastname.
+ * @body {String} rfc - Client record to taxes.
+ * @body {String} curp - Client id in Curp.
+ * @body {String} fechanacimiento - Client.
+ * @body {String} genero - Client gender.
+ * @body {String} domicilio - Client address.
+ * @body {String} noexterior - Client external house number.
+ * @body {String} nointerior - Client internal house number.
+ * @body {String} cp - Client postal code.
+ * @body {String} colonia - Client home neiborhood.
+ * @body {String} municipio - Client municipal name.
+ * @body {String} ciudad - Client city name.
+ * @body {String} estado - Client state name.
+ * @body {String} email - Client email.
+ * @body {String} celular - Client cellphone number.
+ * @body {String} telefono - Client house number.
+ */
+router.put(`${ api.path }${ api.ejecutivo.clientes }`, auth.ejecutivo, clienteController.updateClient)
+
+/**
+ * Get all the transactions in historical
+ * @name Transacciones get in list
+ * @path {GET} /api/v1/transacciones
+ * @auth This route requires HTTP Bearer Authentication.
+ */
+router.get(`${ api.path }${ api.gerente.transaccion }`, auth.gerente, transaccionesController.getTransactions)
+
+module.exports = router</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Thu Apr 28 2022 13:33:32 GMT-0500 (Central Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
